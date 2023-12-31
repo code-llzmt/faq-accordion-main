@@ -1,0 +1,63 @@
+
+/* Work Sans */
+@font-face {
+    font-family: 'Work Sans', sans-serif;
+    font-display: swap;
+    font-weight: 400 600 700;
+    src: url('../assets/fonts/WorkSans-VariableFont_wght.ttf') format('truetype');
+}
+
+*, *::after, *::before{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 16px;
+}
+
+:root{
+    --white: hsl(0, 0%, 100%);
+    --pink-light: hsl(275, 100%, 97%);
+    --purple-grayish: hsl(292, 16%, 49%);
+    --purple-dark: hsl(292, 42%, 14%);
+    --purple-magenta: hsl(281, 83%, 54%);
+
+    --fontWeight-regular: 400;
+    --fontWeight-semiBold: 600;
+    --fontWeight-bold: 700;
+}
+
+body{
+    max-width: 1440px;
+    margin-inline: auto;
+    background-color: var(--pink-light);
+}
+
+img, svg{
+    max-width: 100%;
+    display: block;
+}
+
+/* fonts */
+.title-container > h1{
+    font-size: 3rem;
+    font-weight: var(--fontWeight-bold);
+    color: var(--purple-dark);
+}
+
+.accordion-question > h2{
+    font-size: 1rem;
+    font-weight: var(--fontWeight-semiBold);
+    color: var(--purple-dark); 
+}
+
+.accordion-question:hover > h2{
+    color: var(--purple-magenta);
+}
+
+.accordion-answer > p{
+    font-size: 1rem;
+    font-weight: var(--fontWeight-regular);
+    color: var(--purple-grayish); 
+    line-height: 1.5;
+}
